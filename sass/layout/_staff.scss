@@ -1,0 +1,35 @@
+.section-staff {
+  background: var(--background-section-2);
+}
+.staff {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+.staff-list {
+  display: flex;
+  padding-bottom: 94px;
+  justify-content: space-between;
+}
+.staff-list__items {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: var(--color-white);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
+}
+
+.staf-list__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.172;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+.stuff-list__text {
+  font-size: 16px;
+  line-height: 1.172;
+}

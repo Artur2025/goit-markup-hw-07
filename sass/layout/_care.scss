@@ -1,0 +1,25 @@
+.care {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
+}
+.care-list {
+  width: 270px;
+}
+.care-ikons {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: var(--background-care-icons);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.care-list__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.172;
+  margin-bottom: 10px;
+}
