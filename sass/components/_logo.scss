@@ -3,15 +3,16 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 1.174;
-  color: var(--color-accent);
+  color: $clr-accent;
   padding-top: 24px;
   padding-bottom: 25px;
+  margin-left: 0;
   display: block;
 }
 .logo-header {
-  color: var(--color-title);
+  color: $clr-title;
 }
 
 .logo-footer {
-  color: var(--color-white);
+  color: $clr-white;
 }

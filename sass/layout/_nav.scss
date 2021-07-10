@@ -1,5 +1,9 @@
 .nav {
-  margin-left: 93px;
+  display: none;
+  @media screen and (min-width: $tablet) {
+    margin-left: 88px;
+    display: flex;
+  }
 }
 .nav-list {
   font-weight: 500;
@@ -13,10 +17,10 @@
 }
 .nav-list a:hover,
 .nav-list a:focus {
-  color: var(--color-accent);
+  color: $clr-accent;
 }
 .nav-list .nav-item .current {
-  color: var(--color-accent);
+  color: $clr-accent;
 }
 .current::after {
   content: "";
@@ -26,5 +30,5 @@
   border-radius: 2px;
   position: absolute;
   bottom: 0;
-  background-color: var(--color-accent);
+  background-color: $clr-accent;
 }

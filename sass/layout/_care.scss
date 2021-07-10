@@ -1,13 +1,26 @@
 .care {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 94px;
+  padding-top: 60px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
+
 .care-list {
-  width: 270px;
+  width: 100%;
+  margin-bottom: 30px;
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: $desk) {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+  }
 }
 .care-ikons {
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background: var(--background-care-icons);
@@ -18,8 +31,18 @@
 }
 
 .care-list__title {
+  text-align: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.172;
   margin-bottom: 10px;
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
+}
+.care-list__text {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }

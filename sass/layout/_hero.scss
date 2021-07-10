@@ -1,6 +1,5 @@
 .hero-box {
-  max-width: 1600px;
-  padding: 200px 0;
+  padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -9,18 +8,69 @@
       rgba(58, 50, 47, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/background.jpg);
+    url(../images-2/hero-phone.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(58, 50, 47, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images-2/hero-tablet.jpg);
+  }
+  @media screen and (min-width: $desk) {
+    max-width: 1600px;
+    padding: 200px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(58, 50, 47, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images-2/hero.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: $phone),
+    (min-resolution: 192dpi) and (min-width: $phone),
+    (min-resolution: 2dppx) and (min-width: $phone) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(58, 50, 47, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images-2/hero-phone-2x.jpg);
+    }
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: $tablet),
+    (min-resolution: 192dpi) and (min-width: $tablet),
+    (min-resolution: 2dppx) and (min-width: $tablet) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(58, 50, 47, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images-2/hero-tablet-2x.jpg);
+    }
+  }
 }
 
 .hero-title {
-  font-family: Roboto;
-  font-size: 44px;
-  line-height: 1.364;
-  color: var(--color-white);
-
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  color: $clr-white;
   margin-bottom: 30px;
+
+  @media (min-width: $desk) {
+    font-weight: 900;
+    font-size: 44px;
+
+    line-height: 1.364;
+  }
 }
 .hero-button {
   font-weight: bold;
@@ -30,5 +80,5 @@
 }
 .hero-button:hover,
 .hero-button:focus {
-  background: var(--color-focus);
+  background: $clr-focus;
 }
