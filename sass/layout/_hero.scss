@@ -56,6 +56,18 @@
         url(../images-2/hero-tablet-2x.jpg);
     }
   }
+  @media (min-device-pixel-ratio: 2) and (min-width: $desk),
+    (min-resolution: 192dpi) and (min-width: $desk),
+    (min-resolution: 2dppx) and (min-width: $desk) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(58, 50, 47, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images-2/hero-2x.jpg);
+    }
+  }
 }
 
 .hero-title {
